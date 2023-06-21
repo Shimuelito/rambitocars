@@ -1,0 +1,120 @@
+{% extends 'sitio/base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'sitio/css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'sitio/css/miestilo.css' %}">
+
+{% endblock%}
+{% block contenido %}
+<div class="container-fluid p-2 mt-2">
+    <div class="row">
+        <div class="col-sm-3 p-3">
+            <div class="card bg-dark text-light foto">
+                <img class="card-img-top img-fluid" width="800" height="500" src="{% static 'sitio/imagenes/surpa_blanco.jpg' %}"
+                    alt="chuck">
+                <div class="card-body">
+                    <h4 class="card-title text-info ">Toyota Supra Mk4</h4>
+
+                    <p class="card-text">Uno de los autos mas queridos en el Pais del sol naciente</p>
+                    <h5 class="text-danger">Caracteristicas</h5>
+
+                    <div class="container-fluid p-2 mt-2">
+                        <div class="col-sm-12 ">
+                            <p>Motor: 2JZ-GTE</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>Combustible: Nafta</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>Velocidad máxima (km/h): 250</p>
+                        </div>
+                        <h5 class="text-danger">Precio</h5>
+                        <p> $49.900.000 CLP</p>
+                        <a href="{% url 'compra_supra' %}" class="btn btn-primary">Comprar</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 p-3">
+            <div class="card bg-dark text-light foto">
+                <img class="card-img-top img-fluid" width="1000" height="700"
+                    src="{% static 'sitio/imagenes/nissan_skylinee_azul.jpg' %}" alt="chuck">
+                <div class="card-body">
+                    <h4 class="card-title text-info ">Nissan Skyline R34</h4>
+                    <p class="card-text">El auto mas famoso ,el cual hizo su aparicion en rapidos y furiosos</p>
+                    <h5 class="text-danger">Caracteristicas</h5>
+                    <div class="container-fluid p-2 mt-2">
+                        <div class="col-sm-12 ">
+                            <p>Motor:	RB26DETT</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>Combustible: Nafta</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>Velocidad máxima (km/h):	250 limitado (268 km/h sin limitar)</p>
+                        </div>
+                        <h5 class="text-danger">Precio</h5>
+                        <p> $42,000,000 CLP</p>
+                        <a href="{% url 'compra_nissan' %}" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 p-3">
+            <div class="card bg-dark text-light foto">
+                <img class="card-img-top img-fluid"
+                    src="{% static 'sitio/imagenes/nissan_350z_blanco.jpg' %}" alt="chuck">
+                <div class="card-body">
+                    <h4 class="card-title text-info ">Nissan 350z</h4>
+                    <p class="card-text">Un auto rapido , lujoso y minimalista</p>
+                    <h5 class="text-danger">Caracteristicas</h5>
+                    <div class="container-fluid p-2 mt-2">
+                        <div class="col-sm-12 ">
+                            <p>Motor	V6 VQ35DE o VQ35HR atmosféricos de 3498 cm³ (3,5 L; 213,5 plg³)</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>Combustible: Gasolina</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>Velocidad máxima	250 km/h</p>
+                        </div>
+                        <h5 class="text-danger">Precio</h5>
+                        <p>  $11,900,000  CLP</p>
+                        <a href="{% url 'compra_350z' %}" class="btn btn-primary">Comprar</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="col-sm-3 p-3">
+            <div class="card bg-dark text-light foto">
+                <img class="card-img-top img-fluid" width="800" height="500" src="{% static 'sitio/imagenes/subaru wrx_negroooo.jpg' %}"
+                    alt="chuck">
+                <div class="card-body">
+                    <h4 class="card-title text-info ">Subaru WRX</h4>
+
+                    <p class="card-text">Auto reconozido como el deportivo callejero, por sus grandes variedades de estilos de tunig</p>
+                    <h5 class="text-danger">Caracteristicas</h5>
+
+                    <div class="container-fluid p-2 mt-2">
+                        <div class="col-sm-12 ">
+                            <p>Motor: 2JZ-GTE</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>Combustible: Nafta</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <p>Velocidad máxima (km/h): 250</p>
+                        </div>
+                        <h5 class="text-danger">Precio</h5>
+                        <p> $19.900.000 CLP</p>
+                        <a href="{% url 'compra_subaru' %}" class="btn btn-primary">Comprar</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+{% endblock  %}
